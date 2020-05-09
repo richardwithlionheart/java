@@ -17,7 +17,7 @@ public class Duckie {
 		Dog space = new Dog( " Turtley " );
 		space.canRun();
 		space.canBark();
-		space.canSleep();
+		space.canSleep(argv[4]);
 		space.canFetch(" a " + argv[2] + " ball");
         space.canSwim( argv[3]);
 	}
@@ -38,8 +38,8 @@ class Dog {
 		System.out.println( this.name + " can swim " + speed );
 	}
 
-	void canSleep() {
-		System.out.println( this.name + " can sleep" );
+	void canSleep(String time ) {
+		System.out.println( this.name + " can sleep for " + time);
 	}
 
 	void canBark() {
